@@ -6,7 +6,7 @@
         static void Main(string[] args)
         {
             Random rnd = new Random();
-            int[] d = new int[30];
+            int[] d = new int[20];
             int max=0, min=100;
             for (int i = 0; i<d.Length; i++ )  d[i] = rnd.Next(100);
             for (int i = 0; i < d.Length; i++)
@@ -15,7 +15,7 @@
                 if (d[i] < min) min = d[i];
             }
            
-               for (int i = 0; i < d.Length; i++) Console.Write(" "+d[i]);//выводим массив
+               for (int i = 0; i < d.Length; i++) Console.Write(" "+d[i]);//Показываем массив
                Console.WriteLine();
                  Console.WriteLine("max:  " + max);
                  Console.WriteLine("min  " +min);
